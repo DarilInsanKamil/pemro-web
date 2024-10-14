@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daril Insan Kamil</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="navlink">
+          <li><a href="#" class="section-link">Home</a></li>
+          <li><a href="#project" class="section-link">Project</a></li>
+          <li><a href="#article" class="section-link">Career</a></li>
+          <li><a href="#contact" class="section-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="resume">
+        <button class="btn-resume" onclick="toggleDarkMode()">theme</button>
+        <button class="btn-resume">Resume</button>
+      </div>
+    </header>
+    <main>
+      <div class="linear">
+        <section class="container">
+          <section class="top-subcontainer" id="home">
+            <div class="top-left">
+              <div class="photo-profile">
+                <div class="status">
+                  <!-- <h4>Easier to Love You</h4>
+                  <p style="font-size: small; text-decoration: line-through">
+                    Porter Robinson
+                  </p> -->
+                  <p id="type"></p>
+                </div>
+                <img
+                  src="../assets/profile.png"
+                  alt="profile"
+                  width="200px"
+                  height="200px"
+                  class="img-statu"
+                  style="z-index: -1"
+                />
+              </div>
+              <div class="sosmed">
+                <ul>
+                  <li>
+                    <a href="https://github.com/darilinsankamil">
+                      <box-icon
+                        color="#818181"
+                        type="logo"
+                        name="github"
+                        class="sosmed-icon"
+                      ></box-icon
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/darilkamil/">
+                      <box-icon
+                        color="#818181"
+                        name="linkedin-square"
+                        type="logo"
+                        class="sosmed-icon"
+                      ></box-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://instagram.com/darilkamil">
+                      <box-icon
+                        color="#818181"
+                        name="instagram"
+                        type="logo"
+                        class="sosmed-icon"
+                      ></box-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100011138040962"
+                    >
+                      <box-icon
+                        color="#818181"
+                        name="facebook-circle"
+                        type="logo"
+                        class="sosmed-icon"
+                      ></box-icon>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="top-right">
+              <h2 class="title">Junior Developer, TypeScript Enjoyer</h2>
+              <p class="about">
+                I’m Daril insan Kamil, also knows as daril, a Frontend Developer
+                based in Jakarta, Indonesia. I specialize in front-end
+                development, using Javascript TypeScript, Next.js (and more) to
+                craft engaging and user-friendly interfaces.
+              </p>
+              <div class="tech-stack">
+                <ul>
+                  <li class="stack">Javascript</li>
+                  <li class="stack">TypeScript</li>
+                  <li class="stack">Rust</li>
+                  <li class="stack">CSS</li>
+                </ul>
+                <ul>
+                  <li class="stack">Next Js</li>
+                  <li class="stack">React Js</li>
+                  <li class="stack">Tailwind</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="second-subcontainer" id="project">
+            <div class="second-left">
+              <h2 class="title">Latest</h2>
+              <h2 class="title">Project</h2>
+              <a href="#">view all</a>
+            </div>
+
+            <div class="second-right">
+              <div class="card-project">
+                <div class="card-image">
+                  <img src="../assets/notepad.png" alt="notepad" />
+                </div>
+                <div class="detail-project">
+                  <h3>Notepad</h3>
+                  <p class="desc-project">
+                    Project ini dibuat saat saya mengikuti dicoding x ID camp
+                    ditujukan sebagai tugas akhir untuk mendapatkan kelususan.
+                    dan project ini mendapatkan bintang 5
+                  </p>
+                </div>
+                <div class="button-preview">
+                  <button class="button">
+                    <a
+                      href="https://notesapp-dicoding.netlify.app/"
+                      target="_blank"
+                      >Preview</a
+                    >
+                  </button>
+                  <div class="icon-wrapper">
+                    <box-icon
+                      name="right-top-arrow-circle"
+                      type="solid"
+                      class="icon"
+                    ></box-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="card-project">
+                <div class="card-image">
+                  <img src="../assets/iu.png" alt="notepad" />
+                </div>
+                <div class="detail-project">
+                  <h3>IU</h3>
+                  <p class="desc-project">Web profile IU(Lee Ji-eun)</p>
+                </div>
+                <div class="button-preview">
+                  <button class="button">
+                    <a href="https://iu-tau.vercel.app/" target="_blank"
+                      >Preview</a
+                    >
+                  </button>
+                  <div class="icon-wrapper">
+                    <box-icon
+                      name="right-top-arrow-circle"
+                      type="solid"
+                      class="icon"
+                    ></box-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="card-project">
+                <div class="card-image">
+                  <img src="../assets/rafting.png" alt="notepad" />
+                </div>
+                <div class="detail-project">
+                  <h3>Rafting</h3>
+                  <p class="desc-project">Web profile IU(Lee Ji-eun)</p>
+                </div>
+                <div class="button-preview">
+                  <button class="button">
+                    <a href="https://rafting-two.vercel.app/" target="_blank"
+                      >Preview</a
+                    >
+                  </button>
+                  <div class="icon-wrapper">
+                    <box-icon
+                      name="right-top-arrow-circle"
+                      type="solid"
+                      class="icon"
+                    ></box-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="third-subcontainer" id="article">
+            <div class="second-left">
+              <h2 class="title">Career</h2>
+              <!-- <h2 class="title">Kehidupan</h2> -->
+            </div>
+
+            <ol class="article">
+              <li>
+                <div class="circle"></div>
+                <time>2018 - 2021</time>
+                <h3>SMK Bina Insan Mandiri</h3>
+                <p>
+                  Get access to over 20+ pages including a dashboard layout,
+                  charts, kanban board, calendar, and pre-order E-commerce &
+                  Marketing pages.
+                </p>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <time>September 2021</time>
+                <h3>Sanbercode Bootcamp React Js</h3>
+                <p>
+                  Get access to over 20+ pages including a dashboard layout,
+                  charts, kanban board, calendar, and pre-order E-commerce &
+                  Marketing pages.
+                </p>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <time>November 2021</time>
+                <h3>Sanbercode Bootcamp React Native</h3>
+                <a href="#">Sertifikat</a>
+                <p>
+                  Get access to over 20+ pages including a dashboard layout,
+                  charts, kanban board, calendar, and pre-order E-commerce &
+                  Marketing pages.
+                </p>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <time>2023 - Sekarang</time>
+                <h3>Universitas Pamulang</h3>
+                <p>
+                  Get access to over 20+ pages including a dashboard layout,
+                  charts, kanban board, calendar, and pre-order E-commerce &
+                  Marketing pages.
+                </p>
+              </li>
+            </ol>
+          </section>
+          <section class="music">
+            <!-- <audio controls autoplay loop style="display: none">
+              <source src="../assets/easier.mp3" type="audio/mpeg" />
+              <source src="../assets/cheer.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio> -->
+          </section>
+        </section>
+      </div>
+      <section class="contact">
+        <h1>Contact</h1>
+        <form action="">
+          <div class="input-container">
+            <input type="text" class="input-type" />
+            
+            <input type="text" class="input-type" />
+            
+            <input type="text" class="input-type" />
+            
+          </div>
+          <button>Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Copyright &copy; 2024 All rights reserved is made by
+        <span class="name">Darill</span>
+      </p>
+    </footer>
+    <script src="./index.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>

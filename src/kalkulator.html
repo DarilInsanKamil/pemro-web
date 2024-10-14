@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="../css/kalkulator.css" />
+  </head>
+  <body>
+    <main>
+      <section class="kal-main" id="calculator">
+        <h1>Kalkulator</h1>
+        <input id="display" readonly/>
+        <div class="container">
+          <button value="%" id="operator" onclick="appendToDisplay('')">%</button>
+          <button id="operator" onclick="appendToDisplay('/')">/</button>
+          <button id="clear" onclick="clearDisplay()">C</button>
+          <button onclick="toggleDarkMode()">Theme</button>
+        </div>
+        <div class="container">
+          <button value="7" id="number" onclick="appendToDisplay('7')">7</button>
+          <button value="8" id="number" onclick="appendToDisplay('8')">8</button>
+          <button value="9" id="number" onclick="appendToDisplay('9')">9</button>
+          <button value="x" id="operator" onclick="appendToDisplay('*')">X</button>
+        </div>
+        <div class="container">
+          <button value="4" id="number" onclick="appendToDisplay('4')">4</button>
+          <button value="5" id="number" onclick="appendToDisplay('5')">5</button>
+          <button value="6" id="number" onclick="appendToDisplay('6')">6</button>
+          <button value="-" id="operator" onclick="appendToDisplay('-')">-</button>
+        </div>
+        <div class="container">
+          <button value="1" id="number" onclick="appendToDisplay('1')">1</button>
+          <button value="2" id="number" onclick="appendToDisplay('2')">2</button>
+          <button value="3" id="number" onclick="appendToDisplay('3')">3</button>
+          <button value="+" id="operator" onclick="appendToDisplay('+')">+</button>
+        </div>
+        <div class="container">
+          <button value="0" id="number" onclick="appendToDisplay('0')">0</button>
+          <button value="," id="decimal" onclick="appendToDisplay('.')">,</button>
+          <button value="=" id="result" onclick="calculate()">=</button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./kalkulatori.js"></script>
+  </body>
+</html>

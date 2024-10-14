@@ -1,0 +1,58 @@
+:root {
+  --background-color-light: #ffffff;
+  --text-color-light: #161616;
+  --background-color-dark: #161616;
+  --text-color-dark: #ffffff;
+  --text-second: #818181;
+  --gradient-color-light: rgba(255, 255, 255, 0);
+  --gradient-color-dark: rgba(22, 22, 22, 0);
+}
+body {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+  }
+  
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kal-main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.kal-main button {
+  width: 102px;
+  height: 90px;
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+  border-radius: 4px;
+  border: transparent;
+}
+.dark-mode .kal-main button {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+.container {
+  display: flex;
+  gap: 8px;
+}
+
+#display {
+  height: 80px;
+  font-size: 32px;
+  padding: 0px 20px;
+  width: fit-content;
+  border-radius: 4px;
+
+}
