@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.sidebar {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: blue;
+  height: 100vh;
+}
+.main-content {
+  grid-column-start: 4;
+  grid-column-end: 13;
+}
+
+.chart {
+  height: 50vh;
+  /* background-color: yellow; */
+  display: flex;
+  overflow-y: hidden;
+  align-items: center;
+}
+.table {
+  height: 50vh;
+  /* background-color: green; */
+}
