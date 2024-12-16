@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      thead th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+      tbody td {
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+      tr:nth-child(even) td {
+        background-color: #f9f9f9;
+      }
+      .title {
+        display: flex;
+        justify-content: center;
+      }
+      .squere1 {
+        background-color: blue;
+        content: "";
+        width: 4px;
+        height: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+      <thead>
+        <tr>
+          <th rowspan="2"></th>
+          <th colspan="12">Bulan</th>
+        </tr>
+        <tr>
+          <th>Januari</th>
+          <th>Februari</th>
+          <th>Maret</th>
+          <th>April</th>
+          <th>Mei</th>
+          <th>Juni</th>
+          <th>Juli</th>
+          <th>Agustus</th>
+          <th>September</th>
+          <th>Oktober</th>
+          <th>November</th>
+          <th>Desember</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <div class="title">
+        <p>Laporan Penjualan</p>
+    </div>
+    <div id="column">
+      <div id="timeline-chart"></div>
+    </div>
+    <script src="./dashboardcolumn.js"></script>
+    <script>
+      document.querySelectorAll("details").forEach((detail) => {
+        detail.setAttribute("open", "open");
+      });
+      const datas = [
+        {
+          tahun: 2022,
+          jan: 4017,
+          feb: 6135,
+          mar: 7091,
+          april: 5841,
+          mei: 5036,
+          jun: 4547,
+          jul: 3467,
+          agust: 3970,
+          sep: 6313,
+          okt: 3595,
+          nov: 9207,
+          des: 5945,
+        },
+        {
+          tahun: 2023,
+          jan: 2416,
+          feb: 4136,
+          mar: 7939,
+          april: 8004,
+          mei: 9505,
+          jun: 5026,
+          jul: 6108,
+          agust: 6343,
+          sep: 9404,
+          okt: 9280,
+          nov: 9287,
+          des: 8589,
+        },
+      ];
+
+      function renderTable() {
+        const tableBody = document.getElementById("tbody");
+        tableBody.innerHTML = ""; // Bersihkan isi tabel sebelumnya
+
+        datas.forEach((data, idx) => {
+          const row = `
+            <tr class="bg-white border-b ">
+                
+                <td class="px-6 py-4">${data.tahun}</td>
+                <td class="px-6 py-4">${data.jan}</td>
+                <td class="px-6 py-4">${data.feb}</td>
+                <td class="px-6 py-4">${data.mar}</td>
+                <td class="px-6 py-4">${data.april}</td>
+                <td class="px-6 py-4">${data.mei}</td>
+                <td class="px-6 py-4">${data.jun}</td>
+                <td class="px-6 py-4">${data.jul}</td>
+                <td class="px-6 py-4">${data.agust}</td>
+                <td class="px-6 py-4">${data.sep}</td>
+                <td class="px-6 py-4">${data.okt}</td>
+                <td class="px-6 py-4">${data.nov}</td>
+                <td class="px-6 py-4">${data.des}</td>
+                
+            </tr>
+        `;
+          tableBody.innerHTML += row;
+        });
+      }
+
+      // Panggil fungsi ini untuk merender tabel saat halaman dimuat
+      renderTable();
+    </script>
+  </body>
+</html>
