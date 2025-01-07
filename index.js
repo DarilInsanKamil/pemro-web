@@ -92,3 +92,31 @@ function typeWriter() {
     }
 }
 typeWriter()
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Ambil semua tombol filter dan item galeri
+    const filterButtons = document.querySelectorAll(
+      ".filter-buttons button"
+    );
+    const galleryItems = document.querySelectorAll(".gallery-item");
+
+    // Tambahkan event listener pada setiap tombol
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        // Dapatkan kategori yang dipilih
+        const filter = button.getAttribute("data-filter");
+
+        // Loop melalui setiap item galeri
+        galleryItems.forEach((item) => {
+          const category = item.getAttribute("data-category");
+
+          // Tampilkan atau sembunyikan item berdasarkan kategori
+          if (filter === "all" || category === filter) {
+            item.classList.remove("hidden");
+          } else {
+            item.classList.add("hidden");
+          }
+        });
+      });
+    });
+  });

@@ -393,6 +393,64 @@ footer {
   border-radius: 4px;
 
 }
+
+.location {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.location h5 {
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.gallery-item {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.gallery-item.hidden {
+  display: none;
+}
+.filter-buttons {
+  margin-bottom: 20px;
+}
+.filter-buttons button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.filter-buttons button:hover {
+  background-color: #0056b3;
+}
+.gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0px;
+  margin-top: 80px;
+}
+.gallery-container h1 {
+  margin-bottom: 20px;
+}
 /* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
 /** {
   scrollbar-width: thin;
