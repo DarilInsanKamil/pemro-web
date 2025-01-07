@@ -346,6 +346,7 @@ footer {
   100% {
     transform: scale(1.2);
   }
+  
 }
 
 .article {
@@ -459,7 +460,7 @@ footer {
 @media screen and (max-width: 960px) {
   main {
     background-color: white;
-    display: none;
+    /* display: none; */
     content: "on proggress";
   }
   header {
@@ -467,6 +468,120 @@ footer {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    margin: 0px 104px;
+  }
+  
+  header {
+    margin: 40px 104px 80px 104px;
+  }
+  
+  .top-left, .second-left {
+    grid-column: 1 / 4;
+  }
+  
+  .top-right, .second-right {
+    grid-column: 4 / 13;
+  }
+
+  .about {
+    font-size: 18px;
+  }
+
+  .detail-project > h3 {
+    font-size: 24px;
+  }
+
+  .desc-project {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .top-left, .second-left {
+    grid-column: 1 / 6;
+  }
+  
+  .top-right, .second-right {
+    grid-column: 6 / 13;
+  }
+  
+  .second-right {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    margin: 0px 16px;
+  }
+
+  .top-subcontainer,
+  .second-subcontainer {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .top-left,
+  .second-left,
+  .top-right,
+  .second-right {
+    grid-column: 1 / -1;
+  }
+  
+  .second-right {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .about {
+    width: 100%;
+  }
+  
+  .article {
+    grid-column: 1 / -1;
+    margin-left: 12px;
+  }
+  
+  .article p {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  .article li {
+    margin-left: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery-item {
+    width: calc(33.333% - 10px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-item {
+    width: 100%;
+  }
+  .tech-stack ul {
+    flex-wrap: wrap;
+  }
+  
+  .status {
+    padding: 4px 12px;
+  }
+  
+  .title {
+    font-size: 32px;
+  }
+  
+  .about {
+    font-size: 16px;
+  }
+}
 /* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
   height: 10px;
